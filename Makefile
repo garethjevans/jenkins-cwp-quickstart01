@@ -13,7 +13,7 @@ build:
 	java \
 		-jar /opt/cwp/custom-war-packager.jar \
 		-configPath packager-config.yml -version ${VERSION}
-	ls -la tmp/output/target/jenkinsfile-runner-${VERSION}.war
+	ls -la tmp/output/target/
 
 test: 
 	echo "do nothing"
