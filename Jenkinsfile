@@ -29,6 +29,7 @@ pipeline {
           dir ('./charts/preview') {
             sh "make preview"
             sh "jx preview --app $APP_NAME --dir ../.."
+            sh "pwd"
             sh "git status"
 			//sh "git config --get remote.origin.url"
           }

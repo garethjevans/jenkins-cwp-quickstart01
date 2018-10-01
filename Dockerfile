@@ -8,6 +8,9 @@ RUN mkdir /app && unzip /usr/share/jenkins/jenkins.war -d /app/jenkins
 RUN mkdir -p /usr/share/jenkins/ref/plugins
 #COPY tmp/output/plugins /usr/share/jenkins/ref/plugins
 
+# Disable plugin banner on startup
+RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
+
 #ENTRYPOINT ["/app/bin/jenkinsfile-runner", \
 #            "-w", "/app/jenkins",\
 #            "-p", "/usr/share/jenkins/ref/plugins",\
