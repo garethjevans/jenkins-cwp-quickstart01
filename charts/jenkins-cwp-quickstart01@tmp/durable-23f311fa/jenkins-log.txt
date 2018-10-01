@@ -1,0 +1,5 @@
++ make tag
+sed -i -e "s/version:.*/version: 256.0.0/" Chart.yaml
+sed -i -e "s|repository: .*|repository: 10.67.255.177:5000/garethjevans/jenkins-cwp-quickstart01|" values.yaml
+sed -i -e "s/tag: .*/tag: 256.0.0/" values.yaml
+git add --all
