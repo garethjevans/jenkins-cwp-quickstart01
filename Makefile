@@ -2,7 +2,6 @@ SHELL := /bin/bash
 NAME := jenkins-cwp-quickstart01
 OS := $(shell uname)
 ARTIFACT_ID = jenkinsfile-runner-demo
-VERSION = 256.0-test
 
 all: build
 
