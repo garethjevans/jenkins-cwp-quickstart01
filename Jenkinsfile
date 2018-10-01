@@ -30,6 +30,7 @@ pipeline {
             sh "make preview"
             sh "jx preview --app $APP_NAME --dir ../.."
             sh "pwd"
+            sh "jx --version"
             sh "git status"
 			//sh "git config --get remote.origin.url"
           }
