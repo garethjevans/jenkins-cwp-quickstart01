@@ -10,8 +10,8 @@ check: build test
 
 build:
 	java \
-		-jar /opt/cwp/custom-war-packager.jar) \
-		-configPath packager-config.yml -version ${VERSION}
+		-jar /opt/cwp/custom-war-packager.jar \
+		-configPath packager-config.yml
 
 test: 
 	echo "do nothing"
