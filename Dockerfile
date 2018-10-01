@@ -2,7 +2,7 @@ FROM jenkins/jenkins:2.121.3
 USER root
 ENV CWP_VERSION 1.0-SNAPSHOT
 ADD tmp/output/target/jenkinsfile-runner-$CWP_VERSION.war /usr/share/jenkins/jenkins.war
-RUN mkdir /app && unzip /usr/share/jenkins/jenkins.war -d /app/jenkins
+RUN mkdir /app && unzip /usr/share/jenkins/jenkins.war -d /usr/share/jenkins
 #COPY tmp/output/jenkinsfileRunner /app
 #RUN chmod +x /app/bin/jenkinsfile-runner 
 RUN mkdir -p /usr/share/jenkins/ref/plugins
