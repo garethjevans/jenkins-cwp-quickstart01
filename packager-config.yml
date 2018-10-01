@@ -5,22 +5,6 @@ bundle:
   title: "Jenkinsfile Runner demo"
   description: "Jenkinsfile Runner Docker Image, produced by Custom WAR Packager"
 buildSettings:
-  jenkinsfileRunner:
-    source:
-      groupId: "io.jenkins"
-      artifactId: "jenkinsfile-runner"
-      build:
-        # Jenkinsfile Runner produces appassembler directory which is not a maven artifact
-        #TODO: replace once Jenkinsfile Runner archives runner & CWP is updated
-        noCache: true
-      source:
-        #dir: "/Users/nenashev/Documents/jenkins/tools/jenkinsfile-runner"
-        git: https://github.com/kohsuke/jenkinsfile-runner.git
-        commit: 8ff9b1e9a097e629c5fbffca9a3d69750097ecc4
-    docker:
-      base: "jenkins/jenkins:2.121.3"
-      tag: "jenkins-experimental/cwp-jenkinsfile-runner-demo"
-      build: false
 war:
   groupId: "org.jenkins-ci.main"
   artifactId: "jenkins-war"
