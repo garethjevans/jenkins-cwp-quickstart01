@@ -755,16 +755,6 @@ jenkins:
   - all:
       name: "all"
 unclassified:
-  bitbucketendpointconfiguration:
-    endpoints:
-    - bitbucketCloudEndpoint:
-        manageHooks: false
-  gitlabconnectionconfig:
-    connections:
-    - clientBuilderId: "autodetect"
-      connectionTimeout: 10
-      ignoreCertificateErrors: false
-      readTimeout: 10
 tool:
   git:
     installations:
