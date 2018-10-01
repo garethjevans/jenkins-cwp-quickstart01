@@ -6,8 +6,6 @@ jenkins:
   agentProtocols:
   - "CLI-connect"
   - "CLI2-connect"
-  - "JNLP-connect"
-  - "JNLP2-connect"
   - "JNLP4-connect"
   - "Ping"
   authorizationStrategy:
