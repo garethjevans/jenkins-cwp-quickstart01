@@ -28,6 +28,7 @@ pipeline {
           dir ('/home/jenkins/go/src/github.com/garethjevans/jenkins-cwp-quickstart01/charts/preview') {
             sh "make preview"
             sh "jx preview --app $APP_NAME --dir ../.."
+			sh "git config --get remote.origin.url"
           }
         }
       }

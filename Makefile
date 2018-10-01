@@ -12,7 +12,6 @@ build:
 	java \
 		-jar /opt/cwp/custom-war-packager.jar \
 		-configPath packager-config.yml
-	git config --get remote.origin.url
 
 test: 
 	echo "do nothing"
