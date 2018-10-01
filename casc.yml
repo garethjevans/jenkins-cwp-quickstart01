@@ -754,15 +754,8 @@ jenkins:
   views:
   - all:
       name: "all"
-unclassified:
 tool:
   git:
     installations:
     - home: "git"
       name: "Default"
-  jdk:
-    defaultProperties:
-    - installSource:
-        installers:
-        - jdkInstaller:
-            acceptLicense: false
