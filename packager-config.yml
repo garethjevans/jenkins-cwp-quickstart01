@@ -9,7 +9,7 @@ war:
   groupId: "org.jenkins-ci.main"
   artifactId: "jenkins-war"
   source:
-    version: "2.121.3"
+    version: "2.144"
 
 plugins:
   - groupId: "org.jenkins-ci.plugins.workflow"
@@ -27,7 +27,7 @@ plugins:
   - groupId: "org.jenkins-ci.plugins"
     artifactId: "cloudbees-folder"
     source:
-      version: "6.5.1"
+      version: "6.6"
   - groupId: "org.jenkins-ci.plugins"
     artifactId: "credentials"
     source:
@@ -152,6 +152,11 @@ plugins:
     artifactId: "jx-resources"
     source:
       version: "1.0.15"
+  - groupId: "org.jenkins-ci.plugins"
+    artifactId: "jackson2-api"
+    source:
+      version: "2.8.11.2"
+
 systemProperties: {
     jenkins.model.Jenkins.slaveAgentPort: "50000",
     jenkins.model.Jenkins.slaveAgentPortEnforce: "true"}
