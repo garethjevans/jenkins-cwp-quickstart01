@@ -27,7 +27,7 @@ plugins:
   - groupId: "org.jenkins-ci.plugins"
     artifactId: "cloudbees-folder"
     source:
-      version: "6.5.1"
+      version: "6.6"
   - groupId: "org.jenkins-ci.plugins"
     artifactId: "credentials"
     source:
