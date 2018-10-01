@@ -18,7 +18,7 @@ pipeline {
         }
         steps {
           //dir ('/home/jenkins/go/src/github.com/garethjevans/jenkins-cwp-quickstart01') {
-            //checkout scm
+            checkout scm
             sh "make build"
             sh 'export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml'
 
